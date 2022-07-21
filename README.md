@@ -1,8 +1,8 @@
 # AWS Elastic Beanstalk Ktor Project
-This is a AWS Elastic Beanstalk with Ktor Project. You can clone it and use it or follow the instructions and make one yourself.
-## Here are the complite guide to make such project yourself
-To make a project I will be useing IntelliJ IDEA.
+This is a AWS Elastic Beanstalk with Ktor Project. You can clone it and use it or follow the instructions and make one yourself.  
+Here are the complite guide to make such project yourself. To make a project I will be useing IntelliJ IDEA.
 
+# Setting up a project 
 ## 1. Make a project
 First you have to make a project. Click File - New - Project.  
 
@@ -10,7 +10,10 @@ The settings are:
 - Language – Kotlin 
 - Build system – Gradle 
 - Gradle DSL – Koltin 
-Should look something like this (Pic)
+Should look something like this:
+
+<img src="README%20Images/Screenshot%202022-07-21%20184254.jpg" width="400">
+
 
 ## 2. Setting up build.gradle.kts 
 Now you have to setup your gradle file. 
@@ -67,3 +70,13 @@ Now you have to make a FatJar file. This is your project that will be uploaded t
 ./gradlew shadowJar
 ```
 the file should appear in the Build – libs folder
+# Uploading the project to AWS Beanstalk Services
+Now you have to upload the FatJar file to the AWS Beanstalk services. To do so, firstly you have to make an AWS account and than do the following steps.
+## Create an application 
+- type "Elastic Beanstalk into the serch bar 
+
+<img src="README%20Images/Picture1.png">
+
+- click "Create Application"
+
+<img src="README%20Images/Picture2.png">
