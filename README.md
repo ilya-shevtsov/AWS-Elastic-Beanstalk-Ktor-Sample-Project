@@ -12,7 +12,7 @@ The settings are:
 - Gradle DSL – Koltin 
 Should look something like this:
 
-<img src="README%20Images/Screenshot%202022-07-21%20184254.jpg" width="400">
+<img src="README%20Images/project.png" width="400">
 
 
 ## 2. Setting up build.gradle.kts 
