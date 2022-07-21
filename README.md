@@ -82,7 +82,7 @@ Now you have to make a FatJar file. This is your project that will be uploaded t
 ``` Kotlin
 ./gradlew shadowJar
 ```
-the file should appear in the Build – libs folder
+the file should appear in the aws-elastic-beanstalk-with-ktor\build\libs folder
 # Uploading the project to AWS Beanstalk Services
 Now you have to upload the FatJar file to the AWS Beanstalk services. To do so, firstly you have to make an AWS account and then do the following steps.
 ## Create an application 
