@@ -17,20 +17,36 @@ Should look something like this:
 
 ## 2. Setting up build.gradle.kts 
 Now you have to setup your Gradle file. 
-- add this to the repositories   
+- add this to the repositories block
 ```Kotlin
 maven { url = uri("https://maven.pkg.jetbrains.space/public/p/ktor/eap") }  
 ```
-- add this 
+
+<img src="README%20Images/repo.jpg" width="400">
+
+- and add this to the dependencies block
 ``` Kotlin
 implementation("io.ktor:ktor-server-core:2.0.3")
 implementation("io.ktor:ktor-server-netty:2.0.3")
 implementation("ch.qos.logback:logback-classic:1.2.1")
 ```
-- replace mainClass.set to
+
+<img src="README%20Images/depen.jpg" width="400">
+
+- replace mainClass.set in the application block to
 ``` Kotlin
 mainClass.set("io.ktor.server.netty.EngineMain")
 ```
+
+<img src="README%20Images/app.jpg" width="400">
+
+- add this to plugins block
+``` Kotlin
+id("com.github.johnrengelman.shadow") version "7.1.2" (for shadow file for AWS)
+```
+
+<img src="README%20Images/plug.jpg" width="400">
+
 - add "application.conf" file to resources and past this code into it
 ``` Kotlin
 ktor {
@@ -43,12 +59,9 @@ ktor {
     }
 }
 ```
-- add this to plugins
-``` Kotlin
-id("com.github.johnrengelman.shadow") version "7.1.2" (for shadow file for AWS)
-```
+
 ## 3. Make the server 
-Now you set up your server (the project it self)
+Now you set up your server (the project itself)
 - add this to your main file "Application.kt". "/haha" - is the path that will be added to the url and response - is the thing that the server will output
 ``` Kotlin
 fun main(args: Array<String>): Unit = EngineMain.main(args)
