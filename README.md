@@ -60,8 +60,8 @@ fun Application.module() {
             val response = "keke"
             call.respond(response)
         }
-    
-
+    }
+}
 ```
 ## 4. Make a FatJar file 
 Now you have to make a FatJar file. This is your project that will be uploaded to the AWS.
