@@ -42,7 +42,7 @@ mainClass.set("io.ktor.server.netty.EngineMain")
 
 - add this to plugins block
 ``` Kotlin
-id("com.github.johnrengelman.shadow") version "7.1.2" (for shadow file for AWS)
+id("com.github.johnrengelman.shadow") version "7.1.2"
 ```
 
 <img src="README%20Images/plug.jpg" width="400">
