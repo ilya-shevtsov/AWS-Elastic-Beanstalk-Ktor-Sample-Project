@@ -12,7 +12,7 @@ The settings are:
 - Gradle DSL – Koltin 
 Should look something like this:
 
-<img src="README%20Images/project.png" width="400">
+<img src="README%20Images/project.jpg" width="400">
 
 
 ## 2. Setting up build.gradle.kts 
@@ -75,8 +75,31 @@ Now you have to upload the FatJar file to the AWS Beanstalk services. To do so, 
 ## Create an application 
 - type "Elastic Beanstalk into the serch bar 
 
-<img src="README%20Images/Picture1.png">
+<img src="README%20Images/serch.jpg" width="400">
 
 - click "Create Application"
 
-<img src="README%20Images/Picture2.png">
+<img src="README%20Images/create.jpg" width="400">
+
+- name your application
+
+<img src="README%20Images/name.jpg" width="400">
+
+- platform settings
+
+<img src="README%20Images/platform.jpg" width="400">
+
+- click the upload your code and choose the FatJar file we have created before (its in build-libs path)
+
+<img src="README%20Images/code.jpg" width="400">
+
+Click create and wait for it for finish creating the environment (it might take a while). If it takes more than 10 minutes, then click “Services” and then “Elastic Beanstalk”.
+The Elastic Beanstalk page should look something like this:
+
+<img src="README%20Images/server.jpg" width="400">
+
+The “Health” might be indicated as "Severe", but the server works. Now click the environment name, here you can see the couses of the "Health" status, update your project and most important here is where the URL of your server is shown. Its the link at the top that starts with the name of your project.
+
+<img src="README%20Images/url.jpg" width="400">
+
+You can copy the URL, add the path (/haha in our case) and you will get the response. That is it, now you have a working project. 
